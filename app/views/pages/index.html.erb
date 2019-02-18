@@ -3,6 +3,8 @@
 <% @pages.each do |page| %>
   <h2> <%= page.title %> </h2>
   <%= link_to "Show Page", page_path(page.id) %>
+  <%= link_to 'Edit', edit_page_path(page.id) %>
+  <%= link_to 'Destroy Post', page, method: :delete %>
   <% end %>
 
 
